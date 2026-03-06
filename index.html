@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amber Arya — AI/ML Engineer</title>
+
+  <!-- ── FONTS ── -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <!-- ── LIBRARIES ── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- ── STYLESHEET ── -->
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+<!-- ── CURSOR ── -->
+<div id="cur"><div id="cd"></div><div id="cr"></div></div>
+
+<!-- ── BACKGROUND CANVASES ── -->
+<canvas id="bgc"></canvas>
+<canvas id="webo"></canvas>
+
+<!-- ════════════════════NAVIGATION════════════════════ -->
+<nav>
+  <a class="nav-logo" href="#">AA</a>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#achievements">Wins</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-hire">Hire Me</a>
+</nav>
+
+<!-- ════════════════════HERO════════════════════ -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span></span>B.Tech CSE Student · Aspiring AI Engineer</div>
+    <h1 class="hero-name">
+      <span class="n1">Amber</span>
+      <span class="n2">Arya</span>
+    </h1>
+    <p class="hero-tagline"><strong>AI/ML Engineer</strong> · Full-Stack Dev · Blockchain · Cybersecurity</p>
+    <p class="hero-about">
+      I build <b>intelligent systems that solve real problems</b> — from AI resume coaches to blockchain supply chains.
+      My goal is to become a world-class <b>AI/ML engineer</b> who ships products that genuinely change how people
+      interact with technology. I don't just code — I <b>architect experiences</b>.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-red">↗ My Projects</a>
+      <a href="#contact"  class="btn-out">Let's Connect</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="photo-wrap" id="pf">
+      <div class="photo-border"></div>
+      <div class="photo-inner">
+        <!-- Image -->
+        <img src="img.jpg" alt="Amber Arya"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="fallback" style="display:none">AA</div>
+      </div>
+      <div class="scan"></div>
+    </div>
+    <div class="badge b1">🤖 AI/ML Engineer</div>
+    <div class="badge b2">⛓️ Blockchain Builder</div>
+    <div class="badge b3">🏛️ EDC IIT Delhi Alumni</div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow">↓</div>
+  </div>
+</section>
+
+<!-- ════════════════════ STATSTO UPDATE: change data-count="NUMBER" values below ════════════════════ -->
+<div class="stats">
+  <div class="stat rev"><div class="stat-n" data-count="3">0</div><div class="stat-l">Projects Shipped</div></div>
+  <div class="stat rev"><div class="stat-n" data-count="6">0</div><div class="stat-l">Certifications</div></div>
+  <div class="stat rev"><div class="stat-n" data-count="527">0</div><div class="stat-l">LinkedIn Followers</div></div>
+  <div class="stat rev"><div class="stat-n">∞</div><div class="stat-l">Curiosity Level</div></div>
+</div>
+
+<div class="divider">
+  <div class="dl"></div>
+  <div class="dt">// exploring the stack</div>
+  <div class="dl"></div>
+</div>
+
+<!-- ════════════════════ SKILLS ════════════════════ -->
+<section id="skills" class="sec">
+  <div class="sh rev">
+    <span class="sh-tag">// What I Know</span>
+    <h2>Skills & <span class="ac">Tech Stack</span></h2>
+    <p>A multi-domain toolkit built for the age of intelligent systems</p>
+  </div>
+  <div class="sk-grid">
+    <div class="sk-card rev">
+      <div class="sk-ico" style="background:rgba(21,101,255,.15)">💻</div>
+      <div class="sk-n">Programming Languages</div>
+      <span class="sk-t">C Programming</span>
+      <span class="sk-t">Python</span>
+      <span class="sk-t">JavaScript</span>
+      <span class="sk-t">TypeScript</span>
+      <span class="sk-t">SQL</span>
+    </div>
+    <div class="sk-card rev">
+      <div class="sk-ico" style="background:rgba(0,200,180,.12)">🌐</div>
+      <div class="sk-n">Web Development</div>
+      <span class="sk-t">React.js</span>
+      <span class="sk-t">Next.js</span>
+      <span class="sk-t">Node.js</span>
+      <span class="sk-t">Express</span>
+      <span class="sk-t">REST APIs</span>
+      <span class="sk-t">Tailwind</span>
+    </div>
+    <div class="sk-card rev">
+      <div class="sk-ico" style="background:rgba(232,25,44,.12)">⛓️</div>
+      <div class="sk-n">Blockchain & Web3</div>
+      <span class="sk-t">Smart Contracts</span>
+      <span class="sk-t">Polygon</span>
+      <span class="sk-t">Web3.js</span>
+      <span class="sk-t">Ethers.js</span>
+      <span class="sk-t">Solidity</span>
+    </div>
+    <div class="sk-card rev">
+      <div class="sk-ico" style="background:rgba(255,130,0,.1)">🧠</div>
+      <div class="sk-n">AI / ML & Data Science</div>
+      <span class="sk-t">TensorFlow</span>
+      <span class="sk-t">Scikit-learn</span>
+      <span class="sk-t">NumPy</span>
+      <span class="sk-t">Pandas</span>
+      <span class="sk-t">NLP</span>
+    </div>
+    <div class="sk-card rev">
+      <div class="sk-ico" style="background:rgba(255,215,0,.08)">☁️</div>
+      <div class="sk-n">Cloud, DevOps & Tools</div>
+      <span class="sk-t">Salesforce DevOps</span>
+      <span class="sk-t">Copado</span>
+      <span class="sk-t">Serverless</span>
+      <span class="sk-t">GitHub</span>
+      <span class="sk-t">Linux</span>
+      <span class="sk-t">Postman</span>
+    </div>
+    <div class="sk-card rev">
+      <div class="sk-ico" style="background:rgba(0,200,100,.1)">🔌</div>
+      <div class="sk-n">Cybersecurity & IoT</div>
+      <span class="sk-t">Ethical Hacking</span>
+      <span class="sk-t">Cryptography</span>
+      <span class="sk-t">Arduino</span>
+      <span class="sk-t">GPS Systems</span>
+      <span class="sk-t">QR Systems</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════PROJECTS════════════════════ -->
+
+<section id="projects" class="sec" style="background:rgba(21,101,255,.012);border-top:1px solid rgba(21,101,255,.07);">
+  <div class="sh rev">
+    <span class="sh-tag">// What I've Built</span>
+    <h2>Featured <span class="ac">Projects</span></h2>
+    <p>Real products, prototypes and research — shipped with purpose</p>
+  </div>
+  <div class="pj-grid">
+
+    <!-- AI Career Coach — FEATURED -->
+    
+    <div class="pj-card s2 rev">
+      <div class="pj-top">
+        <div>
+          <div class="pj-role">Founder & Developer</div>
+          <div class="pj-ico" style="background:rgba(155,93,229,.15);margin-top:8px">🧠</div>
+        </div>
+        <span class="pj-st s-live">Live</span>
+      </div>
+      <div class="pj-title">Amber's AI Career Coach</div>
+      <p class="pj-desc">AI-driven resume scoring, ATS optimization and interview prep assistant — built with NLP pipelines and ML models. Helps users improve resumes, analyze job descriptions, and generate tailored applications. My most impactful project to date.</p>
+      <div class="pj-tags">
+        <span class="pj-tag">AI/ML</span>
+        <span class="pj-tag">NLP</span>
+        <span class="pj-tag">Career Tech</span>
+        <span class="pj-tag">Python</span>
+        <span class="pj-tag">React</span>
+      </div>
+      <div class="pj-links">
+        <a href="#" class="pl pl-r">↗ View Demo</a>
+        <a href="https://github.com/amber-arya" target="_blank" class="pl pl-g">⌥ Source Code</a>
+      </div>
+    </div>
+
+    <!-- SIH SupplyChain -->
+    <div class="pj-card rev">
+      <div class="pj-top">
+        <div>
+          <div class="pj-role">Team Leader · SIH</div>
+          <div class="pj-ico" style="background:rgba(21,101,255,.15);margin-top:8px">🏆</div>
+        </div>
+        <span class="pj-st s-sih">SIH Entry</span>
+      </div>
+      <div class="pj-title">Smart India Hackathon — SupplyChain</div>
+      <p class="pj-desc">Blockchain-based agricultural supply chain transparency system on Polygon — focused on traceability and fair farmer payouts using IoT sensors and smart contracts.</p>
+      <div class="pj-tags">
+        <span class="pj-tag">Blockchain</span>
+        <span class="pj-tag">IoT</span>
+        <span class="pj-tag">Agriculture</span>
+        <span class="pj-tag">Polygon</span>
+      </div>
+      <div class="pj-links">
+        <a href="#" class="pl pl-r">↗ Demo</a>
+        <a href="https://github.com/amber-arya" target="_blank" class="pl pl-g">⌥ Code</a>
+      </div>
+    </div>
+
+    <!-- AI Human Twin -->
+    <div class="pj-card rev">
+      <div class="pj-top">
+        <div>
+          <div class="pj-role">Research Prototype</div>
+          <div class="pj-ico" style="background:rgba(232,25,44,.15);margin-top:8px">👤</div>
+        </div>
+        <span class="pj-st s-res">Research</span>
+      </div>
+      <div class="pj-title">AI Human Twin</div>
+      <p class="pj-desc">Generative persona twin that simulates user preferences and conversation style. Built for personalization, UX research and testing — exploring the frontier of identity AI.</p>
+      <div class="pj-tags">
+        <span class="pj-tag">Generative AI</span>
+        <span class="pj-tag">Personalization</span>
+        <span class="pj-tag">UX Research</span>
+      </div>
+      <div class="pj-links">
+        <a href="#" class="pl pl-r">↗ Demo</a>
+        <a href="https://github.com/amberarya7-crypto" target="_blank" class="pl pl-g">⌥ Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════ ABOUT ════════════════════ -->
+<section id="about" class="sec">
+  <div class="sh rev">
+    <span class="sh-tag">// The Person Behind The Code</span>
+    <h2>About <span class="ac">Me</span></h2>
+  </div>
+  <div class="ab-grid">
+    <div class="rev">
+      <div class="ab-title">Engineer.<br><span class="r">AI Enthusiast.</span><br>Builder.</div>
+      <p class="ab-body">I'm <b>Amber Arya</b>, a Computer Science Engineering student who didn't start coding to build a resume — I started because <b>I genuinely love solving hard problems</b> with elegant solutions.</p>
+      <p class="ab-body">My mission is to become a world-class <b>AI/ML Engineer</b> who doesn't just apply models — but understands them deeply enough to <b>push their boundaries</b>. I believe the best AI engineers are part scientist, part designer, part storyteller.</p>
+      <p class="ab-body">I've attended the <b>India AI Impact Summit 2026</b>, represented as a <b>Campus Ambassador for EDC IIT Delhi</b>, and I'm continuously stacking certifications from Anthropic, Oracle, Copado, and more.</p>
+      <div class="ab-facts">
+        <div class="fact"><div class="fact-lbl">Degree</div><div class="fact-v">B.Tech CSE</div></div>
+        <div class="fact"><div class="fact-lbl">Focus</div><div class="fact-v">AI/ML Engineering</div></div>
+        <div class="fact"><div class="fact-lbl">Status</div><div class="fact-v">Open To Work ✅</div></div>
+        <div class="fact"><div class="fact-lbl">Ambition</div><div class="fact-v">AI Researcher</div></div>
+      </div>
+    </div>
+    <div class="rev">
+      <div class="int-title">// What Drives Me</div>
+      <div class="int-item"><span class="int-ico">🤖</span><div><div>Machine Learning</div><div class="int-sub">Building models that learn and adapt in the real world</div></div></div>
+      <div class="int-item"><span class="int-ico">📊</span><div><div>Data Science</div><div class="int-sub">Turning raw data into actionable intelligence</div></div></div>
+      <div class="int-item"><span class="int-ico">⛓️</span><div><div>Blockchain & Web3</div><div class="int-sub">Decentralized systems for transparency and trust</div></div></div>
+      <div class="int-item"><span class="int-ico">🛡️</span><div><div>Cybersecurity</div><div class="int-sub">Ethical hacking, cryptography and secure architecture</div></div></div>
+      <div style="margin-top:22px">
+        <div class="int-title">// Daily Tools</div>
+        <div class="tools-grid">
+          <span class="tool">GitHub</span>
+          <span class="tool">VS Code</span>
+          <span class="tool">Figma</span>
+          <span class="tool">Postman</span>
+          <span class="tool">Notion</span>
+          <span class="tool">Linux</span>
+          <span class="tool">Jira</span>
+          <span class="tool">Slack</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ ACHIEVEMENTS ════════════════════ -->
+<section id="achievements" class="sec" style="border-top:1px solid rgba(232,25,44,.07);">
+  <div class="sh rev">
+    <span class="sh-tag">// Milestones & Recognition</span>
+    <h2>Achievements & <span class="ac">Certifications</span></h2>
+    <p>Stacking knowledge, building credibility, one milestone at a time</p>
+  </div>
+  <div class="ac-grid">
+
+    <div class="ac-card rev">
+      <span class="ac-ico">📜</span>
+      <div class="ac-title">Oracle Certified</div>
+      <p class="ac-desc">Completed Oracle fundamentals — SQL & DB basics certified. Strong relational database foundation for building data-driven applications.</p>
+      <div class="ac-tags"><span class="ac-tag">2024</span><span class="ac-tag">Certification</span><span class="ac-tag">Database</span></div>
+    </div>
+
+    <div class="ac-card rev">
+      <span class="ac-ico">🚀</span>
+      <div class="ac-title">Copado AI Certified — Salesforce DevOps</div>
+      <p class="ac-desc">Achieved Copado AI Certification in Salesforce DevOps — demonstrating expertise in AI-assisted DevOps workflows and enterprise software delivery. Cert ID: 060547.</p>
+      <div class="ac-tags"><span class="ac-tag">Feb 2026</span><span class="ac-tag">Certification</span><span class="ac-tag">Salesforce</span><span class="ac-tag">DevOps</span></div>
+    </div>
+
+    <div class="ac-card rev">
+      <span class="ac-ico">🤖</span>
+      <div class="ac-title">Claude Code In Action — Anthropic</div>
+      <p class="ac-desc">Completed Anthropic's "Claude Code in Action" certification — demonstrating hands-on proficiency with Claude AI and advanced prompt engineering techniques.</p>
+      <div class="ac-tags"><span class="ac-tag">Mar 2026</span><span class="ac-tag">Anthropic</span><span class="ac-tag">AI/ML</span><span class="ac-tag">Certification</span></div>
+    </div>
+
+    <div class="ac-card rev">
+      <span class="ac-ico">🌏</span>
+      <div class="ac-title">India AI Impact Summit 2026</div>
+      <p class="ac-desc">Attended the India AI Impact Summit 2026 — an event bringing together global leaders, policymakers and industry innovators shaping the future of AI in India.</p>
+      <div class="ac-tags"><span class="ac-tag">2026</span><span class="ac-tag">Summit</span><span class="ac-tag">AI/ML</span><span class="ac-tag">Networking</span></div>
+    </div>
+
+    <div class="ac-card rev">
+      <span class="ac-ico">🏛️</span>
+      <div class="ac-title">Campus Ambassador — BECON '26, EDC IIT Delhi</div>
+      <p class="ac-desc">Recognized for remarkable dedication as Campus Ambassador for BECON '26, the Annual Business & Entrepreneurship Conclave of EDC IIT Delhi (Dec 2025 – Feb 2026).</p>
+      <div class="ac-tags"><span class="ac-tag">Dec 2025 – Feb 2026</span><span class="ac-tag">IIT Delhi</span><span class="ac-tag">Ambassador</span></div>
+    </div>
+
+    <div class="ac-card rev">
+      <span class="ac-ico">🐙</span>
+      <div class="ac-title">GitHub & Open Source Contribution</div>
+      <p class="ac-desc">Active GitHub contributions and collaborative college projects. Consistent commit history, open source mindset, and team-first development culture.</p>
+      <div class="ac-tags"><span class="ac-tag">Ongoing</span><span class="ac-tag">Open Source</span><span class="ac-tag">Teamwork</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════ CONTACT ════════════════════ -->
+<section id="contact" class="sec">
+  <div class="sh rev">
+    <span class="sh-tag">// Let's Build Together</span>
+    <h2>Get In <span class="ac">Touch</span></h2>
+    <p>Open to internships, AI/ML projects, collabs and just tech talk</p>
+  </div>
+  <div class="ct-grid">
+    <div class="rev">
+      <div class="ct-head">Let's build something <span class="r">intelligent</span></div>
+      <p class="ct-sub">Got an AI/ML project idea, internship opportunity, or just want to talk tech? Share your idea and timeline — I'll reply within 24 hours with a plan.</p>
+      <a href="mailto:amberarya7@gmail.com" class="c-item">
+        <div class="c-ico" style="background:rgba(232,25,44,.12)">✉️</div>
+        <div><div class="c-lbl">Email — Preferred</div><div class="c-val">amberarya7@gmail.com</div></div>
+      </a>
+      <a href="tel:+917632743043" class="c-item">
+        <div class="c-ico" style="background:rgba(0,200,180,.12)">📞</div>
+        <div><div class="c-lbl">Phone · 5 PM – 10 PM IST</div><div class="c-val">+91 7632 743 043</div></div>
+      </a>
+    </div>
+    <div class="rev">
+      <a href="https://github.com/amber-arya" target="_blank" class="soc-link">
+        <div class="soc-l"><span class="soc-ico">🐙</span><div><div class="soc-n">GitHub</div><div class="soc-h">amber-arya · Projects & Code</div></div></div>
+        <span class="soc-arr">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/amber-arya" target="_blank" class="soc-link">
+        <div class="soc-l"><span class="soc-ico">💼</span><div><div class="soc-n">LinkedIn</div><div class="soc-h">amber-arya · 527 followers</div></div></div>
+        <span class="soc-arr">↗</span>
+      </a>
+      <div style="margin-top:10px;padding:18px 20px;border-radius:10px;background:rgba(0,210,100,.06);border:1px solid rgba(0,210,100,.2);display:flex;align-items:center;gap:14px;">
+        <span style="font-size:1.2rem">✅</span>
+        <div>
+          <div style="font-family:'Bebas Neue';font-size:1rem;letter-spacing:.06em;color:#00d264;">Open To Internships & Projects</div>
+          <div style="font-size:.72rem;color:var(--text-dim);margin-top:2px;">Avg response · &lt; 24 hours · India IST</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ FOOTER ════════════════════ -->
+<footer>© 2026 <b>Amber Arya</b> · B.Tech CSE · Aspiring AI/ML Engineer · India</footer>
+
+<!-- ── JAVASCRIPT ── -->
+<script src="script.js"></script>
+
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html> 
