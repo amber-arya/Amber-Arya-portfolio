@@ -16,9 +16,9 @@ export default async function handler(req, res) {
         'Authorization': `Bearer ${process.env.GROQ_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: 'llama-3.1-8b-instant',
         messages: messages,
-        max_tokens: 500,
+        max_tokens: 200,
         temperature: 0.7
       })
     });
@@ -27,6 +27,6 @@ export default async function handler(req, res) {
     return res.status(200).json(data);
 
   } catch (error) {
-    return res.status(500).json({ error: 'Something went wrong' });
+    return res.status(500).json({ error: error.message });
   }
 }
