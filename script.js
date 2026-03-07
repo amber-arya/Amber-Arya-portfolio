@@ -262,7 +262,7 @@ window.addEventListener('load', () => {
 ════════════════════════════════════════════════════ */
 
 // ── CONFIG — APNI GROQ KEY YAHAN DAALO ──
-const GROQ_KEY    = "GROQ_API_KEY";
+const GROQ_KEY    = "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";
 const EMAILJS_SVC = "service_y62jj4e";
 const EMAILJS_TPL = "jbute9q";
 const EMAILJS_KEY = "Xbj9y3WsWB-R1QBm9";
