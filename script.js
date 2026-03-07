@@ -262,7 +262,7 @@ window.addEventListener('load', () => {
 ════════════════════════════════════════════════════ */
 
 // ── CONFIG — APNI GROQ KEY YAHAN DAALO ──
-const GROQ_KEY    = "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";
+const GROQ_KEY    = "";
 const EMAILJS_SVC = "service_y62jj4e";
 const EMAILJS_TPL = "jbute9q";
 const EMAILJS_KEY = "Xbj9y3WsWB-R1QBm9";
@@ -533,11 +533,10 @@ async function sendMessage() {
   showTyping();
 
   try {
-    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    const res = await fetch('/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${GROQ_KEY}`
       },
       body: JSON.stringify({
         model: 'llama-3.3-70b-versatile',
