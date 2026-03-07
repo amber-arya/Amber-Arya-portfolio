@@ -243,7 +243,8 @@ document.addEventListener('mousemove', e => {
   pf.style.transform = `perspective(600px) rotateY(${x}deg) rotateX(${-y}deg)`;
 });
 
-/* ════════════════════ HERO LOAD ANIMATION ════════════════════ */
+/* ════════════════════ HERO LOAD ANIMATION 
+════════════════════ */
 window.addEventListener('load', () => {
   gsap.from('.hero-eyebrow',    { y:20, opacity:0, duration:.70, ease:'power3.out', delay:.25 });
   gsap.from('.hero-name .n1',   { y:50, opacity:0, duration:.85, ease:'power3.out', delay:.40 });
@@ -539,13 +540,10 @@ async function sendMessage() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
         messages: [
           { role: 'system', content: JARVAS_SYSTEM },
           ...chatHistory
-        ],
-        max_tokens: 500,
-        temperature: 0.7
+        ]
       })
     });
 
